@@ -8,8 +8,6 @@ import bgImage from "../../../images/new-workout-bg.jpg";
 import Field from "../../ui/Field/Field";
 import Button from "../../ui/Button/Button";
 
-import styles from './NewWorkout.module.scss'
-
 const NewWorkout = () => {
   const navigate = useNavigate();
 
@@ -27,7 +25,7 @@ const NewWorkout = () => {
         heading="Create new workout"
         backCallback={() => navigate(-1)}
       />
-      <div className={styles.wrapper}>
+      <div className='wrapper-inner-page'>
         <form onSubmit={handleSubmit}>
           <Field
             placeholder="Enter name"
